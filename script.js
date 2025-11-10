@@ -17,41 +17,46 @@ promise(val)
 .then(data=>{
 	return new Promise((res,rej)=>{
 		setTimeout(()=>{
-			div.innerText = `Result: ${data}`;
-			res(data);
+			let newdata = data;
+			div.innerText = `Result: ${newdata}`;
+			res(newdata);
 		},2000)
 	})
 })
 .then(data=>{
 	return new Promise((res,rej)=>{
 		setTimeout(()=>{
-			div.innerText = `Result: ${data*2}`;
-			res(data);
-		},3000)
+			let newdata = data*2;
+			div.innerText = `Result: ${newdata}`;
+			res(newdata);
+		},2000)
 	})
 })
 .then(data=>{
 	return new Promise((res,rej)=>{
 		setTimeout(()=>{
-			div.innerText = `Result: ${data-3}`;
-			res(data);
-		},4000)
+			let newdata = data-3;
+			div.innerText = `Result: ${newdata}`;
+			res(newdata);
+		},2000)
 	})
 })
 .then(data=>{
 	return new Promise((res,rej)=>{
 		setTimeout(()=>{
-			div.innerText = `Result: ${data/2}`;
-			res(data);
-		},5000)
+			let newdata = data/2;
+			div.innerText = `Result: ${newdata}`;
+			res(newdata);
+		},2000)
 	})
 })
 .then(data=>{
 	return new Promise((res,rej)=>{
 		setTimeout(()=>{
-			div.innerText = `Final Result: ${data+10}`;
-			res(data);
-		},6000)
+			let newdata = data+10;
+			div.innerText = `Final Result: ${newdata}`;
+			res(newdata);
+		},2000)
 	})
 })
 })
